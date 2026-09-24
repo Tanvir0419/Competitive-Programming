@@ -1,20 +1,7 @@
-#include <stdio.h>
-int main()
-{
-    int t;
-    scanf("%d", &t);
-    for (int i = 1; i <= t; i++)
-    {
-        int n, k;
-        scanf("%d%d", &n, &k);
-        if (n - 2 == k || n % 2 == 0)
+int n, count = 0;
+        scanf("%d", &n);
+        int arr[n];
+        for (int j = 0; j <= n - 1; j++)
         {
-            printf("Yes\n");
+            scanf("%d", &arr[j]);
         }
-        else
-        {
-            printf("No\n");
-        }
-    }
-    return 0;
-}
